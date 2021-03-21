@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>ISTE Membership Card</title>
+  </head>
+  <body>
+    <div class="container-fluid" id="section-outer">
+      <!-- header starts here-->
+      <div class="row pt-2" id="#header">
+        <!-- img division iste logo -->
+        <div class="col-2 pr-0">
+          <img
+            src="./iste.png"
+            class="img-circle img-responsive img-fluid rounded"
+            alt=""
+          />
+        </div>
+        <!-- iste heading -->
+        <div class="col-9">
+          <div class="row pl-0 pr-0 text-center">
+            <div class="col-12 pl-0 pr-0" id="iste">
+              Indian Society for Technical Education
+            </div>
+            <div class="col-12" id="pincode">
+              <span id="place">New Delhi</span> <span>110 016</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- header ends here -->
+<!-- body starts here -->
+      <div class="row px-4 " id="#body">
+        <div class="container" id="inner-section">
+
+            <div class="row pt-4">
+                <div class="col-12 p-0 pl-2">
+                    <label style = 'font-weight:700;'for="name">Name : <input id = 'name' type="text" name = 'name'value = 'thankappan' disabled></label>
+                </div>
+            </div>
+            <div class="row pt-4 pb-0" id = 'code'>
+                <div class="col-8 p-0" id = 'instituteCode'><p>Institute Code</p>
+             
+                </div>
+              
+                <div class="col-4 p-0 pr-1 pb-0"id = 'membershipNo'>Membership No</div>
+            </div>
+<!-- edit the code membership and institute code -->
+            <div class="row mt-0 pt-0" id = ''>
+                <div class="col-8 p-0" id = 'instituteCodeNum'><p>K E 0 1 7</p>
+             
+                </div>
+              
+                <div class="col-4 p-0 pr-1"id = 'membershipNoNum'>2 1 8 0 </div>
+            </div>
+
+            
+            <div class="row" id = designation>
+                <div class="col-6 text-center">
+                   <img src="./athul babu signature.png" class = 'img-responsive img-fluid' alt="">
+                </div>
+                <div class="col-6 text-center">
+                    <img src="./athul babu signature.png" class = 'img-responsive img-fluid' alt="">
+                </div>
+            </div>
+            <div class="row mb-0" id = designation>
+                <div class="col-6 text-center">
+                    <p>Executive Secretary</p>
+                </div>
+                <div class="col-6 text-center">
+                    <p>Chairperson</p>
+                </div>
+            </div>
+
+
+        </div>
+      </div>
+      <div class="row pb-0 pt-1" id="footer">
+        <h5 class="text-center w-100 p-0">STUDENT MEMBERSHIP CARD</h5>
+      </div>
+
+    </div>
+
+<!-- card ends here -->
+
+
+    <!-- don't touch here -->
+    
+    <div class=" alert alert-warning alert-dismissible fade show" id = 'alert'role="alert">
+        <strong>This page/site is visible only on desktop
+        </strong> 
+        <img src="./desktop.png" class = 'img-fluid img-responsive' alt="">
+      </div>
+      
+      <script>
+        $(".alert").alert();
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
