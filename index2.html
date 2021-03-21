@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+  />
+    <title>Document</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .inner-container {
+        height: 380px;
+        width: 450px;
+        font-family: "Poppins", sans-serif;
+        background-color: #49a06b;
+        position: relative;
+      }
+      .inner-inner-container-header {
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 20%;
+      }
+
+      .inner-inner-container-header img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 25px;
+        position: absolute;
+      }
+      .inner-inner-container-header div {
+        display: inline-block;
+        position: absolute;
+      }
+      .iste {
+        margin-left: 100px;
+        margin-top: 10px;
+        color:white;
+        font-weight:700;
+      }
+      .place {
+        margin: 200px;
+        width: 100%;
+        margin-top: 30px;
+        color:white;
+      }
+
+      .inner-inner-container-body {
+        height: 290px;
+        width: 90%;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 25px;
+      }
+      .name {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+      }
+
+      #name {
+        outline: none;
+        border: none;
+        width: 300px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: black;
+        background-color:white;
+    padding:10px;
+      }
+      .instituteCode {
+        position: absolute;
+        margin-left: 150px;
+        margin-top: 100px;
+        font-size: small;
+        font-weight:600;
+      }
+      .membershipNo {
+        position: absolute;
+        margin-left: 260px;
+        margin-top: 100px;
+        font-size: small;
+        font-weight:600;
+
+      }
+      .instituteCodeNum{
+          position:absolute;
+          margin-left: 150px;
+        margin-top: 115px;
+
+      }
+      .membershipNoNum{
+          position:absolute;
+          margin-left: 260px;
+        margin-top: 115px;
+      }
+
+      .designation-img{
+          position:absolute;
+          /* display:flex; */
+          margin-top:200px;
+          padding-left: 40px;
+
+        
+
+      }
+      .designation-img img{
+          height:50px;
+          width:100px;
+          /* margin-right:60px; */
+          display:inline-block;
+      }
+
+      .designation{
+          position:absolute;
+          /* display:flex; */
+          margin-top:250px;
+          padding-left: 20px;
+
+      }
+      .designation span{
+        margin-right:50px;
+        /* background-color:blue; */
+
+      }
+      .sign.executive{
+          margin-left:18px;
+          margin-right:0;
+      }
+      .sign.chair{
+          margin-left:90px;
+      }
+      .chair{
+        margin-left:22px;
+
+      }
+
+      .inner-inner-container-footer{
+          position:absolute;
+          bottom:5px; 
+      }
+      .footer{
+          color:white;
+          margin-left:125px;
+          font-weight: 700;
+      }
+      #alert{
+    display:none;
+}
+
+ @media only screen and (max-width: 450px) {
+  
+
+    .container{
+     display:none;
+    
+    }
+
+    #alert{
+        position:absolute;
+        margin-top: 40%;
+        display:block;
+    }
+    
+  }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="inner-container">
+        <div class="inner-inner-container-header">
+          <div class="img"><img src="./iste.png" alt="" /></div>
+          <div class="iste">Indian Society for Technical Education</div>
+          <div class="place">New Delhi 110 016</div>
+        </div>
+
+        <div class="inner-inner-container-body">
+          <div class="name">
+            <label style="font-weight: 700" for="name"
+              >Name :
+              <input
+                id="name"
+                type="text"
+                name="name"
+                value="thankappan"
+                disabled
+            /></label>
+          </div>
+          <span>
+            <div class="instituteCode">
+              <span>Institute Code</span>
+            </div>
+          </span>
+          <span>
+            <div class="membershipNo">
+              <span>Membership No</span>
+            </div>
+          </span>
+
+          <div>
+            <span
+              ><div class="instituteCodeNum">
+                <span>K E 0 1 7</span>
+              </div></span
+            >
+            <span
+              ><div class="membershipNoNum">
+                <span>2 8 1 0 </span>
+              </div></span
+            >
+          </div>
+
+          <div class="designation-img">
+              <span class="sign executive"><img src="./athul babu signature.png" alt=""></span>
+              <span class="sign chair"><img src="./athul babu signature.png" alt=""></span>
+          </div>
+          <div class="designation">
+            <span class="executive">Executive Secratary</span>
+            <span class="chair">Chairperson</span>
+
+        
+
+          </div>
+        </div>
+
+        <div class="inner-inner-container-footer">
+
+            <div class="footer">
+                <span>STUDENT MEMBERSHIP CARD</span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class=" alert alert-warning alert-dismissible fade show" id = 'alert'role="alert">
+        <strong>This page/site is visible only on desktop
+        </strong> 
+        <img src="./desktop.png" class = 'img-fluid img-responsive' alt="">
+      </div>
+  </body>
+</html>

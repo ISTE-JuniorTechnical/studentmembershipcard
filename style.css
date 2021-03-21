@@ -11,9 +11,12 @@ body{
     justify-content:center;
     align-items:center;
     height:100vh;
-    width:100%;
+    /* width:100%; */
+    page-break-inside: avoid;
 }
-
+.container-fluid{
+    margin-left:20px;
+}
 
 #section-outer{
     font-family: 'Poppins', sans-serif;
